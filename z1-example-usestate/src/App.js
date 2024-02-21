@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ExampleuseState1 from './components/ExampleuseState1';
 import './App.css';
 import FormHandle from './components/FormHandle';
+import SetInitialState from './components/SetInitialState';
 
 function App() {
   const [users , setUser] = useState([
@@ -31,9 +32,14 @@ function App() {
   }
   return (
     <div className="App">
+      <div>
       <FormHandle />
       <h1>User Example</h1>
       <ExampleuseState1 users = {users} increaseAge={increaseAge}  deleteUser={deleteUser}/>
+
+      </div>
+     
+      <SetInitialState />
       
     </div>
   );
