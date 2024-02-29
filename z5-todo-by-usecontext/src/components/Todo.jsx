@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { todoContext } from '../context/TodosProvider';
 
+
 function Todo({id, title , completed}) {
     const{dispatch} = useContext(todoContext);
     const deleteTodo = ()=>{
