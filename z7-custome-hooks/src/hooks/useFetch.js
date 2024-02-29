@@ -12,8 +12,8 @@ function useFetch() {
         
             
           const dataFetch = await fetch(url);
-          console.log(dataFetch);
-          console.log("data is fetch");
+          // console.log(dataFetch);
+          // console.log("data is fetch");
           
           const resData = await dataFetch.json();
           setData(resData);
